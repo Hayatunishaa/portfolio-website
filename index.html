@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayatunisha Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/fb358991f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hey there, I am <br><span>Hayatunisha</span>.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ************about********** -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A coding enthusiast and a Frontend Developer with keen interest in science and technology. Always excited to learn new things.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('profiles')">Profiles</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C, C++</li>
+                            <li><span>Web development</span><br>html, CSS, JavaScript</li>
+                            <li><span>Frameworks and tools</span><br>Bootstrap, Git, Github, VScode, Google Cloud</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>B. Tech in Electrical Engineering From Delhi Technological University <br> (GPA - 9.14)</li>
+                            <li><span>2019</span><br>Class 12th from CBSE Board <br> (Percentage - 87.2)</li>
+                            <li><span>2017</span><br>Class 10th from CBSE Board <br> (CGPA - 10)</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web development</span><br>Web App Development</li>
+                            <li><span>Web development</span><br>Web App Development</li>
+                            <li><span>Web development</span><br>Web App Development</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="profiles">
+                        <ul>
+                            <li><a href="https://leetcode.com" target="_blank">Leetcode</a></li>
+                            <li><a href="https://www.geeksforgeeks.org/" target="_blank">GFG</a></li>
+                            <li><a href="www.leetcode.com" target="_blank">Github</a></li>
+                            <li><a href="https://www.codechef.com" target="_blank">CodeChef</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***********services********** -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>I am familiar with many Web Technologies and many frameworks. I have created beautiful and performant products with delighful user experiences.</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Mentorship</h2>
+                    <p>I have good communication skills and I feel satisfied to help other. I had provided mentorship to school students and college juniors.</p>
+                    <a href="#about">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Tutoring</h2>
+                    <p>Taugh and helped a lot of students in their academics through platforms like Chegg and offline tuitions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- **********portfolio*********** -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>RedStore</h3>
+                        <p>An E-Commerce website specially designed for atheletes. Sports related goods available</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>My Blog</h3>
+                        <p>My Blog is a blogging platform where people can read articles on the Internet.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Basic Calculater</h3>
+                        <p>Used for basic arithmatic calculations.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ***********contact************ -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>1234567890</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="blank"><i class = "fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="blank"><i class = "fab fa-twitter-square"></i></a>
+                        <a href="https://instagram.com" target="blank"><i class = "fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="blank"><i class = "fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name ="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message"rows="6" placeholder="Anything you wanna tell.."></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Hayatunisha</p>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
